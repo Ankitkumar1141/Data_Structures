@@ -8,7 +8,7 @@ class Stack:
         self.stack = [None]*size
         self.top = -1
 
-    def push_value(self,value):
+    def push_value(self,value):   ##  PUSH
         
         ## overflow check
         if self.top == len(self.stack)-1:
@@ -23,7 +23,7 @@ class Stack:
     def print_top(self):
         print(self.top)
     
-    def pop_value(self):
+    def pop_value(self):    ## POP
 
         # underflow check
         if self.top < 0:
@@ -36,7 +36,7 @@ class Stack:
             print("Sucessfully deleted")
 
 
-    def display_stack(self):
+    def display_stack(self):            ## DISPLAY
         for i in range(0,len(self.stack)):
             print(self.stack[i],)
 
